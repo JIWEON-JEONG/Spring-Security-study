@@ -19,6 +19,10 @@ repositories {
 }
 
 dependencies {
+	//스프링 시큐리티 의존성 - 서버가 기동되면 스프링 시큐리티의 초기화 작업 및 보안 설정이 이루어진다.
+	//별도의 설정이나 구현을 하지 않아도 기본적인 웹 보안기능이 현재 시스템에 연동되어 작동함
+	//1. 모든 요청은 인증이 되어야 자원에 접근 가능 2. 인증방식은 Form 방식과 http basic 로그인 방식 제공
+	//3. 기본 로그인 페이지 제공 , 기본 계정 한개 제공
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
